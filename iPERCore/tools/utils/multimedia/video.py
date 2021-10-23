@@ -498,7 +498,7 @@ def fuse_src_ref_multi_outputs(output_mp4_path, src_img_paths, ref_img_paths, mu
             "-i", tmp_avi_video_path,
             "-vcodec", vcodec,
             output_mp4_path,
-            # "-loglevel", "quiet"
+            "-loglevel", "quiet"
         ]
         print(" ".join(cmd))
         subprocess.call(cmd)
